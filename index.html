@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>كنوز - تفاسير وتأملات الكتاب المقدس</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Tajawal', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                50: '#fdf8f6',
+                100: '#f2e8e5',
+                200: '#eaddd7',
+                300: '#e0cec7',
+                400: '#d2bab0',
+                500: '#a07c70', // Earthy brown/gold
+                600: '#8a6a5f',
+                700: '#74574e',
+                800: '#5e463f',
+                900: '#4a3630',
+              },
+              accent: {
+                500: '#d4af37', // Gold
+                600: '#b5932a',
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #fdfcf8;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #d2bab0; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a07c70; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-markdown": "https://esm.sh/react-markdown@^10.1.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-stone-50 text-stone-800 font-sans antialiased selection:bg-accent-500 selection:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
